@@ -10,7 +10,8 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Nise Project!");
+            Console.WriteLine("Nice Project!");
+            Console.WriteLine("Error Project");
         }
     }
 }
