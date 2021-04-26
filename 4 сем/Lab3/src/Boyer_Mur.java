@@ -10,13 +10,14 @@ public class Boyer_Mur {
         Scanner sc = new Scanner (System.in);
         System.out.println("Введите основную строку:");
         String str = sc.nextLine();
-        System.out.println("Введите подстроку для поиска:");
+        System.out.println("Введите подстроку строку:");
         String template = sc.nextLine();
+        String t = template;
         names.add(str);
 
         start = System.nanoTime();
-        int index1 = str.indexOf("ja");
-        System.out.println("Мы ищем букву 'ja' в строке "+ str +". Индекс данной буквы " + index1);
+        int index1 = str.indexOf(t);
+        System.out.println("Мы ищем символы:"+ template+ "в строке "+ str +". Индекс данных символов: " + index1);
         stop = System.nanoTime();
         System.out.println("IndexOf: " + (stop-start));
 
@@ -52,7 +53,7 @@ public class Boyer_Mur {
             i += offsetTable.get(str.charAt(i));
 
         }
-        System.out.println("Мы ищем букву 'ja' в строке "+ str +". Индекс данной буквы " + (k+1));
+        System.out.println("Мы ищем символы:"+ template+ "в строке "+ str +". Индекс данных символов: " + (k+1));
         stop = System.nanoTime();
         System.out.println("Boyer - Mur: " + (stop-start));
         if (k >= sourceLen - templateLen) {
