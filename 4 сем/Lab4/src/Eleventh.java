@@ -7,6 +7,7 @@ public class Eleventh {
         Stack st = new Stack();
         Stack letter = new Stack();
         Stack symbols = new Stack();
+        int open = 0, close = 0;
         int i = 0;
         while ((i = reader.read()) != -1) {
             char ch = (char) i;
@@ -26,8 +27,6 @@ public class Eleventh {
                 symbols.push(r);
             }
         }
-        System.out.println(letter);
-        System.out.println(symbols);
         int kol = 0;
         while (symbols.size() != 0) {
             char s = (char) symbols.pop();
@@ -35,6 +34,12 @@ public class Eleventh {
                 case ('+'):
                 case ('-'):
                     kol++;
+                    break;
+                case ('('):
+                    open++;
+                    break;
+                case (')'):
+                    close++;
                     break;
             }
         }
@@ -50,11 +55,11 @@ public class Eleventh {
                     break;
             }
         }
-        if (w-1 == kol)
+
+        if ((w - 1 == kol) && (close == open))
             System.out.println("Формула имеет правильный вид");
         else
             System.out.println("Формула имеет не правильный вид");
 
     }
 }
-
