@@ -27,7 +27,7 @@ public class First {
         answer.addLast(min);
         System.out.println(answer);
         String temp = answer.getFirst();
-        try (PrintWriter pw = new PrintWriter("C:\\Users\\WithLove\\IdeaProjects\\Siaod_4\\First.txt")) {
+        try (PrintWriter pw = new PrintWriter("C:\\Users\\dmtr\\IdeaProjects\\4 сем\\Lab4\\First.txt")) {
             for (int i=0;i<m;i++){
                 Iterator iterator = answer.iterator();
                 while (iterator.hasNext()) {

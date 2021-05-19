@@ -14,7 +14,7 @@ public class Third
         if (min_lim1.equals(""))
             min_lim1 = "-250";
         if (max_lim1.equals(""))
-            max_lim1 = "1013";
+            max_lim1 = "1019";
         int n = Integer.parseInt(n1);
         int m = Integer.parseInt(m1);
         int min_lim = Integer.parseInt(min_lim1);
