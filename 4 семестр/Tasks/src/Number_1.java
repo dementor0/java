@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Tasks {
+public class Number_1 {
     public static void main(String[] args) {
-        Tasks s = new Tasks();
+        Number_1 s = new Number_1();
         s.Z1();
     }
     public void Z1() {
@@ -36,7 +36,7 @@ public class Tasks {
         if (maxi > 0)                                                // Если максимальный периметр ненулевой
             System.out.println("Maximum Perimeter is: " + maxi);
         else                                                         // иначе треугольник не строится
-        System.out.println("Triangle formation is not possible.");
+            System.out.println("Triangle formation is not possible.");
     }
     public void Z2(){
 
